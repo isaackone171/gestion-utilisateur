@@ -1,3 +1,4 @@
+<?php require_once(__DIR__.'/users_list.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -28,21 +29,25 @@
                 </tr>
             </thead>
 
+             <?php foreach ($users as $user) { ?>
             <tbody>
                 <tr>
-                    <td>Koné</td>
-                    <td>Isaac</td>
-                    <td>Informatique</td>
-                    <td>0151592992</td>
-                    <td>isaackone171@gmail.com</td>
+                    <td><?php echo $user['last_name']; ?></td>
+                    <td><?php echo $user['first_name']; ?></td>
+                    <td><?php echo $user['department']; ?></td>
+                    <td><?php echo $user['phone_number']; ?></td>
+                    <td><?php echo $user['email']; ?></td>
                     <td>
                         <div>
-                            <a class="btn btn-secondary" href="user_form_edit.php">Modifier</a>
-                            <a class="btn btn-danger" href="#">Supprimer</a>
+                            <a class="btn btn-secondary" href="user_form_edit.php?id=<?php echo($user['id']); ?>">Modifier</a>
+                            <a class="btn btn-danger" href="user_delete.php?id=<?php echo($user['id']); ?>">Supprimer</a>
                         </div>
                     </td>
                 </tr>
             </tbody>
+            <?php
+                }
+            ?>
         </table>       
     </div>
     

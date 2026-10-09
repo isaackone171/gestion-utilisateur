@@ -16,7 +16,7 @@
     <div class="formulaire">
         <div class="container">
 
-            <form action="#" method="POST">
+            <form action="user_store.php" method="POST">
                 <legend>AJOUTER UN NOUVEAU UTILISATEUR</legend>
 
                 <div class="mb-3">
