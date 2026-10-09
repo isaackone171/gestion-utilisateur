@@ -1,0 +1,14 @@
+.move{
+    display:flex;
+    justify-content:space-around;
+    margin-top:50px;
+    align-items: center;
+}
+body{
+    background: linear-gradient(to left, #1CB5E0, #000046);
+    background: linear-gradient(to right,#000046, #1CB5E0);
+}
+h1{
+    color:white;
+}
+

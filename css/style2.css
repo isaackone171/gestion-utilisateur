@@ -1,0 +1,13 @@
+body{
+    background:linear-gradient(to left, #1CB5E0, #000046);
+    background:linear-gradient(to right,#000046, #1CB5E0);
+}
+legend,label{
+    color:#1CB5E0;
+    text-align: center;
+}
+.formulaire{
+    background-color: white;
+    margin:90px;
+    padding:25px;   
+}
